@@ -2,8 +2,8 @@ function Footer() {
     return (
         <footer>
             <div>
-                <h2 style={{ fontSize: "2rem", marginBottom: "1rem"}}>UMN Blockchain</h2>
-                <p style={{fontSize: "small", fontWeight: "200"}}>@ 2023 UMN Blockchain. All Rights Reserved </p>
+                <h2 style={{ fontSize: "2rem", marginBottom: "1rem", color: "white"}}>UMN Blockchain</h2>
+                <p style={{fontSize: "small", fontWeight: "200",  color: "white"}}>@ 2023 UMN Blockchain. All Rights Reserved </p>
             </div>
             <img src="https://1000logos.net/wp-content/uploads/2021/07/Minnesota-Golden-Gophers-logo.png" alt="Univeristy of Minnesota Logo"></img>
             <ul>

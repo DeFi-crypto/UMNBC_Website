@@ -6,11 +6,11 @@ import DiscordMemberList from "./components/DiscordMemberList.jsx";
 import NewsList from "./components/NewsList.jsx";
 import autoFetch from "./utils/autoFetch.js";
 import Layout from "./components/Layout.jsx";
-import Footer from "./components/Footer.js";
+import Footer1 from "./components/Footer.js";
 import MoreAboutClub from './components/MoreAboutClub.jsx';
 import WeOffer from './components/WeOffer.jsx';
 import OurTeam from './components/OurTeam.jsx';
-import Footer from './components/Footer.jsx';
+import Footer2 from './components/Footer.jsx';
 
 const SERVERURL = process.env.REACT_APP_SERVER_URL;
 
@@ -88,9 +88,9 @@ function App() {
             {/* We could update with our own NFTs once we have them */}
           </div>
         </div>
-       <Footer />
+       <Footer1 />
       </div>
-      <Footer />
+      <Footer2 />
     </Layout>
   );
 }
