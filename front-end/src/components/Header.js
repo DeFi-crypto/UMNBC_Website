@@ -12,8 +12,8 @@ function Header () {
         <li>
           <a>About Us</a>
           <ul class="p-2">
-            <li><a>Submenu 1</a></li>
-            <li><a>Submenu 2</a></li>
+            <li><a>Alumni</a></li>
+            <li><a>Our Team</a></li>
           </ul>
         </li>
         <li><a>Resources</a></li>
@@ -26,14 +26,14 @@ function Header () {
       <li><a>About Us</a></li>
       <li>
         <details>
-          <summary>Events</summary>
+          <summary>Resouces</summary>
           <ul class="p-2">
             <li><a>Calendar</a></li>
             <li><a>Discord</a></li>
           </ul>
         </details>
       </li>
-      <li><a>Resouces</a></li>
+      <li><a>Team</a></li>
     </ul>
   </div>
   <div class="navbar-end">

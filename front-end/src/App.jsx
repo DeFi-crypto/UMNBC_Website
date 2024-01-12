@@ -11,6 +11,7 @@ import MoreAboutClub from './components/MoreAboutClub.jsx';
 import WeOffer from './components/WeOffer.jsx';
 import OurTeam from './components/OurTeam.jsx';
 import Footer2 from './components/Footer.jsx';
+import Header from './components/Header.js';
 
 const SERVERURL = process.env.REACT_APP_SERVER_URL;
 
@@ -32,7 +33,7 @@ function App() {
     });
   }, []);
 
-  return (
+  return (  
     <Layout>
       <div className="App">
         <div className="hero-wrap page-wrap">
