@@ -6,6 +6,7 @@ import DiscordMemberList from "./components/DiscordMemberList.jsx";
 import NewsList from "./components/NewsList.jsx";
 import autoFetch from "./utils/autoFetch.js";
 import Layout from "./components/Layout.jsx";
+import Footer from "./components/Footer.js";
 
 function App() {
   const [newsResults, setNewsResults] = useState(null);
@@ -96,6 +97,7 @@ function App() {
           </a>
         </div>
       </div>
+      <Footer />
     </Layout>
   );
 }
