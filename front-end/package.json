@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start --allowedHosts=localhost,127.0.0.1",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -42,9 +42,9 @@
     ]
   },
   "devDependencies": {
-    "dotenv": "^16.3.1",
     "@wixc3/react-board": "^2.3.0",
     "daisyui": "^4.4.24",
+    "dotenv": "^16.3.1",
     "tailwindcss": "^3.4.0"
   }
 }
