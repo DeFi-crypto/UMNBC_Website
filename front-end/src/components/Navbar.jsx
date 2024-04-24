@@ -4,7 +4,8 @@ import "./Navbar.scss";
 import autoFetch from "../utils/autoFetch";
 import {FaBars} from 'react-icons/fa';
 
-const SERVERURL = process.env.REACT_APP_SERVER_URL;
+// const SERVERURL = process.env.REACT_APP_SERVER_URL;
+const SERVERURL = "https://api.umnblockchain.xyz";
 
 function Navbar() {
   const [coinData, setCoinData] = useState(null);
@@ -54,7 +55,7 @@ function Navbar() {
         {(btnToggle || innerWidth > 600) && (
           <ul onClick={toggleMenu} className="navUl">
           <li>
-            <a href="#" className="navAhref active"> {/* Home anchor is valid */} 
+            <a href="#" className="navAhref"> {/* Home anchor is valid */} 
               Home
             </a>
           </li>

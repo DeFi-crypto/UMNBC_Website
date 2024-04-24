@@ -26,11 +26,7 @@ app.use('/api', limit);
 let cachecontrol = apicache.middleware;
 
 // Populate api data
-// apiUpdate();
-
-app.get("/", (req, res) => {
-  res.send("null");
-})
+apiUpdate();
 
 app.get("/api/coin-market", cachecontrol("5 minutes"), (req, res) => {
   if (req.rateLimit.remaining) {
@@ -40,7 +36,7 @@ app.get("/api/coin-market", cachecontrol("5 minutes"), (req, res) => {
   }
 });
 
-app.get("/data/crypto-panic", (req, res) => {
+app.get("/api/crypto-panic", (req, res) => {
   res.json(cache.cryptopanic);
 });
 
@@ -52,6 +48,8 @@ app.get("/api/discord", cachecontrol("5 minutes"), (req, res) => {
   }
 });
 
+setInterval(apiUpdate, 30 * 60 * 1000);
+
 app.listen(PORT, () => {
-  console.log("Server listening on 8888");
+  console.log("Server listening on ", PORT);
 });

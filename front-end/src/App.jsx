@@ -13,7 +13,8 @@ import OurTeam from './components/OurTeam.jsx';
 import Footer2 from './components/Footer.jsx';
 import Header from './components/Header.js';
 
-const SERVERURL = process.env.REACT_APP_SERVER_URL;
+// const SERVERURL = process.env.REACT_APP_SERVER_URL;
+const SERVERURL = "https://api.umnblockchain.xyz";
 
 function App() {
   const [newsResults, setNewsResults] = useState(null);
@@ -22,7 +23,7 @@ function App() {
   useEffect(() => {
     (async () => {
       const [newsData, discordData] = await Promise.all([
-        autoFetch(`${SERVERURL}/data/crypto-panic`),
+        autoFetch(`${SERVERURL}/api/crypto-panic`),
         autoFetch(`${SERVERURL}/api/discord`),
       ]);
 
@@ -69,10 +70,10 @@ function App() {
               <NewsList newsResults={newsResults} />
             </div>
           </div>
-          <div className="hero-corner-name">
+        </div>
+        <div className="hero-corner-name w-full text-center">
             <h1>University Of Minnesota Blockchain Club</h1>
           </div>
-        </div>
         <div className="about-us page-wrap" id="aboutUs">
           <h2>Why Blockchain</h2>
           <MoreAboutClub />
@@ -81,7 +82,7 @@ function App() {
           <h2 style={{ fontSize: "2rem", marginBottom: "1rem"}}>What we offer</h2>
           <WeOffer />
         </div>
-        <div className="our-team page-wrap" id="ourTeam">
+        <div className="our-team" id="ourTeam">
           <h2 style={{ fontSize: "2rem", marginBottom: "1rem"}}>Current Officers</h2>
           <OurTeam />
           <div id="nft-disclosure">
