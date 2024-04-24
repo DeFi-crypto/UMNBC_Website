@@ -1,0 +1,52 @@
+[
+    {
+        "Name": "Co President",
+        "Image": "https://oh.imgix.net/wp-content/uploads/2022/01/pudgy-penguin-3.jpg?auto=format%2Ccompress&ixlib=php-3.3.0&w=400",
+        "Title": "Jorgen"
+    },
+    {
+        "Name": "Co President",
+        "Image": "https://i.redd.it/pc6kk3p0rjf81.png",
+        "Title": "Andy"
+    },
+    {
+        "Name": "Project Manager",
+        "Image": "mike.jpg",
+        "Title": "Anthony"
+    },
+    {
+        "Name": "Software Engineer",
+        "Image": "john.jpg",
+        "Title": "Jorgen"
+    },
+    {
+        "Name": "UI/UX Designer",
+        "Image": "jane.jpg",
+        "Title": "Andy"
+    },
+    {
+        "Name": "Project Manager",
+        "Image": "mike.jpg",
+        "Title": "Anthony"
+    },
+    {
+        "Name": "Project Manager",
+        "Image": "mike.jpg",
+        "Title": "Anthony"
+    },
+    {
+        "Name": "Software Engineer",
+        "Image": "john.jpg",
+        "Title": "Jorgen"
+    },
+    {
+        "Name": "UI/UX Designer",
+        "Image": "jane.jpg",
+        "Title": "Andy"
+    },
+    {
+        "Name": "Project Manager",
+        "Image": "mike.jpg",
+        "Title": "Anthony"
+    }
+]

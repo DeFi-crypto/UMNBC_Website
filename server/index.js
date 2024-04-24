@@ -10,13 +10,9 @@ const app = express();
 app.use(helmet());
 app.set("trust proxy", 1);
 
-app.use(cors(
-  {
-    origin: ["https://umnblockchain.xyz"],
-    methods: ["GET"],
-    credentials: true
-  }
-));
+app.use(
+  cors()
+);
 
 const PORT = process.env.PORT || 8888;
 
